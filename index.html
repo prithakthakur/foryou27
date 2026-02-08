@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Oshi ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<audio id="yesMusic" src="song.mp3"></audio>
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <h1>Happy Propose Day 💖</h1>
+  <p class="subtext">For the girl who owns my heart…</p>
+  <button onclick="nextPage(2)">Open My Heart 💌</button>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <h2>Dear Oshi 🌹</h2>
+  <p>
+    You came into my life quietly,  
+    but you changed everything beautifully.  
+    With you, love feels safe, warm, and real. 💕
+  </p>
+  <button onclick="nextPage(3)">One Last Question 💍</button>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+  <h1 class="proposal">Will You Marry Me Jaanu? 💍❤️</h1>
+  <p class="subtext">I choose you. Today. Tomorrow. Forever.</p>
+
+  <div class="buttons">
+    <button class="yes" onclick="yesAnswer()">YES 💖</button>
+    <button class="no" onclick="moveNo()">NO 😡🙈</button>
+  </div>
+
+  <!-- ONLY IMAGE — appears smoothly AFTER YES -->
+  <div id="yesImageContainer">
+    <img
+      src="proposal.jpg"
+      alt="Love"
+    />
+  </div>
+
+  <p id="response"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
